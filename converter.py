@@ -48,5 +48,5 @@ if __name__ == '__main__':
             from_path = arg
         elif opt in ('-t', '--to'):
             to_path= arg
-   
+     
     _parse_xml(from_path, to_path)    
