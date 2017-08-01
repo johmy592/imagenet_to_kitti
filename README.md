@@ -8,10 +8,14 @@ in DIGITS.
    Make sure you download from http://www.image-net.org/api/text/imagenet.synset.geturls.getmapping?wnid=n##### 
    in order to get correct mapping between image and wnid
 
-2. Go to the folder with the downloaded datasets and rename: rename 's/^0*//' * to remove 0s in folder names. 
+2. Go to the folder with the downloaded datasets and rename: 
+   
+   `$ rename 's/^0*//' *` 
+
+   to remove 0s in folder names. 
    
 3. Use pyrenamer as follows: 
-   $ pyrenamer
+   `$ pyrenamer`
    Navigate to dataset folder.
    Under options: chose an applicable Selection pattern (e.g *.jpg)
    Under options: select "Add files recursively"
@@ -19,7 +23,8 @@ in DIGITS.
    Click rename
    Repeat for all Selection patterns that match your image files.
 
-4. Move files from subdirectories: mv */* .
+4. Move files from subdirectories: 
+   `$ mv */* .`
 
 5. Create new folders with the following structure:
    -pascal_root
@@ -34,7 +39,7 @@ You can name "pascal_root" to whatever you want, just use the same path in the c
 
 8. Create a directory where you want to put your KITTI data, here refered to as $KITTI_ROOT.
 
-9. Run: $ python converter.py -f $PASCAL_ROOT -t $KITTI_ROOT
+9. Run: `$ python converter.py -f $PASCAL_ROOT -t $KITTI_ROOT`
 
    After this step you should have data ready for training under $KITTI_ROOT. Note that this only creates training data,
    if you want validation data you will have to set this up by yourself by for example manually moving a set of images 
@@ -49,7 +54,7 @@ You can name "pascal_root" to whatever you want, just use the same path in the c
 	     in <labels-path> and vice versa.
 
     When you have taken this into concideration, you can run: 
-      $ python remover.py -i <images-path> -l <labels-path>
+    `$ python remover.py -i <images-path> -l <labels-path>`
     
     <images-path> should be like $KITTI_ROOT/train/images/, and <labels-path> $KITTI_ROOT/train/labels/ if you followed
     the steps above.
