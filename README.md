@@ -15,22 +15,33 @@ in DIGITS.
    to remove 0s in folder names. 
    
 3. Use pyrenamer as follows: 
+   
    `$ pyrenamer`
+   
    Navigate to dataset folder.
+   
    Under options: chose an applicable Selection pattern (e.g *.jpg)
+   
    Under options: select "Add files recursively"
+   
    In "Renamed file name pattern" put: {1}_{dir} 
+   
    Click rename
+   
    Repeat for all Selection patterns that match your image files.
 
 4. Move files from subdirectories: 
    `$ mv */* .`
 
 5. Create new folders with the following structure:
+   
    -pascal_root
-     -Annotations
-     -JPEGImages
-You can name "pascal_root" to whatever you want, just use the same path in the converter later.
+     
+      -Annotations
+     
+      -JPEGImages
+
+   You can name "pascal_root" to whatever you want, just use the same path in the converter later.
 
 6. Move all images to  $PASCAL_ROOT/JPEGImages folder. 
 
