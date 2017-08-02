@@ -35,11 +35,9 @@ in DIGITS.
 
 5. Create new folders with the following structure:
    
-   -pascal_root
-     
-      -Annotations
-     
-      -JPEGImages
+* pascal_root
+  * Annotations
+  * JPEGImages
 
    You can name "pascal_root" to whatever you want, just use the same path in the converter later.
 
