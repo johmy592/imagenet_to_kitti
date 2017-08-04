@@ -40,7 +40,7 @@ def _parse_xml(root, to_path):
             bbox = obj.find('bndbox')
             text_file.write('%s %s %s %s ' % (bbox.find('xmin').text, bbox.find('ymin').text
                                               ,bbox.find('xmax').text, bbox.find('ymax').text))
-            text_file.write('0 0 0 0 0 0 0 0')
+            text_file.write("0 0 0 0 0 0 0 0\n")
             text_file.close
         
 
