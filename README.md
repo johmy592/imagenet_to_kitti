@@ -6,7 +6,10 @@ in DIGITS.
 1. To download the images I use: https://github.com/dividiti/ck-caffe/tree/master/script/imagenet-downloader 
    in order to get reasonable names of the files.
    Make sure you download from http://www.image-net.org/api/text/imagenet.synset.geturls.getmapping?wnid=n##### 
-   in order to get correct mapping between image and wnid
+   in order to get correct mapping between image and wnid.
+
+   Follow the installation steps up until "Installing CK-Caffe repository" at https://github.com/dividiti/ck-caffe
+   before you try to use the download script.
 
 2. Go to the folder with the downloaded datasets and rename: 
    
