@@ -65,7 +65,7 @@ in DIGITS.
              remover.py will DELETE ALL FILES in <images-path> that dont have a corresponding label file
 	     in <labels-path> and vice versa.
 
-    When you have taken this into concideration, you can run: 
+    When you have taken this into consideration, you can run: 
     `$ python remover.py -i <images-path> -l <labels-path>`
     
     <images-path> should be like $KITTI_ROOT/train/images/, and <labels-path> $KITTI_ROOT/train/labels/ if you followed
